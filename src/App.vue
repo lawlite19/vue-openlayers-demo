@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <olmap />
+     <header>
+      <router-link to="/olmap">OpenStreetMap</router-link> 
+      &nbsp; &nbsp; 
+      <router-link to="/amap">高德地图</router-link>
+      &nbsp; &nbsp; 
+      <router-link to="/googlemap">Google</router-link>
+      &nbsp; &nbsp; 
+      <router-link to="/tiandimap">天地图</router-link>
+    </header>
+    <router-view></router-view>   
   </div>
 </template>
 
 <script>
-import olmap from './components/olmap.vue'
-
 export default {
-  name: 'app',
-  components: {
-    olmap
-  }
+
 }
 </script>
 
